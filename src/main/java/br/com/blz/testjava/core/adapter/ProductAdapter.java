@@ -25,7 +25,7 @@ public class ProductAdapter implements IProductPort {
     public Product create(Product product) {
 
         if (existBySku(product.getSku()))
-            throw new BusinessLogicException("Product already exists!");
+            throw new BusinessLogicException("Sku already exists!");
 
         this.databaseAdapter.addProduct(product);
         product.getInventory().setQuantity(calculateInventoryQuantity(product.getInventory().getWarehouses()));
