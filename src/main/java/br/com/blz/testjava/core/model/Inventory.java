@@ -21,6 +21,13 @@ public class Inventory {
         this.warehouses = warehouse;
     }
     
+    public Inventory() {
+    }
+
+    public Inventory( List<Warehouse> warehouses) {
+        this.warehouses = warehouses;
+    }
+
     @Override
     public int hashCode() {
         final int prime = 31;

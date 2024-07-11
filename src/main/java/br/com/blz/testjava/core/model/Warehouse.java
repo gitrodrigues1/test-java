@@ -8,6 +8,15 @@ public class Warehouse {
     private int quantity;
     private WareHouseTypeEnum type;
 
+    public Warehouse() {
+    }
+
+    public Warehouse(String locality, int quantity, WareHouseTypeEnum type) {
+        this.locality = locality;
+        this.quantity = quantity;
+        this.type = type;
+    }
+
     public String getLocality() {
         return locality;
     }

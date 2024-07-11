@@ -6,7 +6,15 @@ public class Product {
     private String name;
     private Inventory inventory;
     private boolean isMarketable;
+
+    public Product() {
+    }
     
+    public Product(long sku, String name, Inventory inventory) {
+        this.sku = sku;
+        this.name = name;
+        this.inventory = inventory;
+    }
     public long getSku() {
         return sku;
     }
