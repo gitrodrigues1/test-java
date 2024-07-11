@@ -16,8 +16,9 @@ public class DatabaseAdapter {
         return products;
     }
 
-    public void addProduct(Product product) {
+    public Product addProduct(Product product) {
         this.products.add(product);
+        return product;
     }
 
     public Product editProduct(long sku, Product product) {
